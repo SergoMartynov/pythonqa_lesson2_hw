@@ -19,6 +19,16 @@ def fixtures_set_return_words():
     set_01 = {'rock', 'post-rock', 'punk-rock'}
     return set_01
 
-# @pytest.fixture
-# def fixture_dictionary():
-#     dictionary_01 =
+@pytest.fixture
+def fixture_dictionary():
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+    return car
+
+@pytest.fixture
+def fixture_string():
+    test_string = 'my name is Boris'
+    return test_string
