@@ -32,6 +32,7 @@ def test_dictionary_04(fixture_dictionary):
     print('year = ', year)
     assert year == 1964, model == 'Mustang'
 
+
 # dictionary test 05 - values method
 def test_dictionary_05(fixture_dictionary):
     values = fixture_dictionary.values()

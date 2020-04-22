@@ -1,5 +1,6 @@
 import pytest
 
+
 # set test 01 - compare a length of the set
 def test_set_01(fixtures_set_return_numbers):
     b = len(fixtures_set_return_numbers)
@@ -8,6 +9,7 @@ def test_set_01(fixtures_set_return_numbers):
     print('this is a = ', a)
     print('this is b = ', b)
     assert b == a
+
 
 # set test 02 - test for clear method
 def test_set_02(fixtures_set_return_words):
@@ -18,6 +20,7 @@ def test_set_02(fixtures_set_return_words):
     print('this is empty_set_02 = ', fixtures_set_return_words)
     assert empty_set_01 == fixtures_set_return_words
 
+
 # set test 03 - test for difference method
 def test_set_03(fixtures_set_return_words):
     set_02 = {'rock', 'post-rock', 'punk-rock', 'metal'}
@@ -25,6 +28,7 @@ def test_set_03(fixtures_set_return_words):
     print('\n==============================')
     print('the diff is = ', metal)
     assert metal == {'metal'}
+
 
 # set test 04 - test for remove method
 def test_set_04(fixtures_set_return_words):
@@ -34,6 +38,7 @@ def test_set_04(fixtures_set_return_words):
     print('this is fixtures_set_return_words = ', fixtures_set_return_words)
     print('this is no_punk = ', no_punk)
     assert no_punk == fixtures_set_return_words
+
 
 # set test 05 - test add method
 def test_set_05(fixtures_set_return_numbers):
